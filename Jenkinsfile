@@ -7,7 +7,7 @@ pipeline {
        maven 'maven-3.9'
   }
   environment {
-        IMAGE_NAME = '19'
+        IMAGE_NAME = '20'
   }
   stages {
     stage("init") {
@@ -46,7 +46,7 @@ pipeline {
         }
     }
 
-    stage("build image") {        
+    stage("build image") {        // es stage karar liner provision serveric araj 
       steps {
           script {
               gv.buildImage()
